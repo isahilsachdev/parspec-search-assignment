@@ -104,7 +104,7 @@ function App() {
               <ResultCard key={item.id} item={item} searchQuery={searchQuery} id="name" />
             </div>
             {
-              item.items?.includes(searchQuery) && (
+              item.items?.some((item) => item.toLowerCase().includes(searchQuery.toLowerCase())) && (
                   <li>
                     "{searchQuery}" found in items
                   </li>
