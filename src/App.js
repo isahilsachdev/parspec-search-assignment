@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import JSONdata from './data.json';
-import ResultCard from './components/ResultCard';
-import InputContainer from './components/InputContainer';
+import ResultCard from './Components/ResultCard';
+import InputContainer from './Components/InputContainer';
 
 function App() {
   const [originalData, setOriginalData] = useState([]);
